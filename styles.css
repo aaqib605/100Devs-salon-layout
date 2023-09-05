@@ -102,6 +102,110 @@ body {
   color: #fff;
 }
 
+.footer {
+  background-color: #111111;
+}
+
+.footer > section {
+  display: flex;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px;
+  color: #fff;
+}
+
+.footer .one,
+.footer .two,
+.footer .three {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+}
+
+.footer .one .social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.footer .one .social-icons i {
+  font-size: 1.6rem;
+}
+
+.footer .one > span,
+.footer .two > span,
+.footer .three > span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer .one p,
+.footer .two p {
+  max-width: 90%;
+}
+
+.footer .one form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .one form input {
+  padding: 5px 15px;
+  max-width: 70%;
+}
+
+.footer .one form button {
+  padding: 5px 15px;
+  width: 100px;
+}
+
+.footer .two {
+  flex-basis: 2;
+}
+
+.footer .two .timings {
+  border: 2px solid #bf5320;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .two .timings section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .two .timings .left {
+  display: inline-block;
+  text-align: left;
+}
+
+.footer .two .timings .right {
+  display: inline-block;
+  text-align: right;
+  font-weight: 100;
+  color: #ff5404;
+  font-size: 1.1rem;
+}
+
+.footer .two a.book-now {
+  text-align: center;
+}
+
+.footer .three .join-team {
+  font-size: 1.2rem;
+}
+
+.footer .three .contact span:first-child {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
 @media screen and (max-width: 1100px) {
   .nav {
     padding: 0 60px;
@@ -150,6 +254,16 @@ body {
   .nav .book-now {
     display: none;
   }
+
+  .footer > section {
+    flex-direction: column;
+  }
+
+  .footer .one > span,
+  .footer .two > span,
+  .footer .three > span {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -174,5 +288,11 @@ body {
 
   .about p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer > section {
+    padding: 30px;
   }
 }
