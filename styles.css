@@ -59,13 +59,32 @@ body {
   font-weight: 400;
 }
 
-.nav .book-now {
+.book-now {
   padding: 10px 20px;
   background-color: #9c4218;
   text-decoration: none;
   font-weight: 500;
   color: #fff;
   letter-spacing: 2px;
+}
+
+.hero {
+  height: calc(100vh - 107px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 4rem;
+  max-width: 90%;
+  text-align: center;
+  color: #fff;
 }
 
 @media screen and (max-width: 1100px) {
@@ -107,5 +126,12 @@ body {
 
   .nav .book-now {
     display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero h1 {
+    letter-spacing: 3px;
+    font-size: 3rem;
   }
 }
